@@ -5,7 +5,8 @@ import org.junit.runners.Suite;
 @Suite.SuiteClasses({
         CatTest.class,
         FelineTest.class,
-        CatTest.class
+        LionTest.class,
+        ParamLionTest.class
 })
 public class AllTest {
 }

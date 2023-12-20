@@ -18,6 +18,20 @@ public class LionTest {
 
     private final Feline felineMock = Mockito.mock(Feline.class);
 
+
+    @Test
+    public void testGetFood() throws Exception {
+        Feline feline = new Feline();
+        Lion lion = new Lion("Самец", feline);
+        Assert.assertEquals(List.of("Животные", "Птицы", "Рыба"), lion.getFood());
+    }
+
+    @Test
+    public void testGetKittens() throws Exception {
+        Feline feline = new Feline();
+        Lion lion = new Lion("Самец", feline);
+        Assert.assertEquals(1, lion.getKittens());
+    }
     @Test
     public void getKittensReturnValidCountOfKittens() {
         try {
